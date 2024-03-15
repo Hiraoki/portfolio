@@ -157,44 +157,44 @@
    <section class="projects" id="projects">
        <div class="max-width">
           <h2 class="title">My project</h2>
-          <div class="carousel owl-carousel">
+          
+             <div class="carousel owl-carousel">
              <div class="card">
              <div class="box">
              <a href="Proj1.png"><img src="Proj1.png" alt=""></a>
               <div class="text">Sample 1</div> 
-              <p>Click the picture to zoom in</p>
              </div>
              </div>
+
              <div class="card">
               <div class="box">
               <a href="Proj2.png"><img src="Proj2.png" alt=""></a> 
-               <div class="text">Sample 2</div> 
-               <p>Click the picture to zoom in</p>
+               <div class="text">Sample 2</div>              
               </div>
               </div> 
+
               <div class="card">
                 <div class="box">
                 <a href="sample3.jpg"><img src="sample3.jpg" alt=""></a>
-                 <div class="text">Sample 3</div>  
-                 <p>Click the picture to zoom in</p>
+                 <div class="text">Sample 3</div>                 
                 </div>
                 </div> 
+
                 <div class="card">
                   <div class="box">
                    <a href="sample4.jpg"><img src="sample4.jpg" alt=""></a>
-                   <div class="text">Sample 4</div>
-                   <p>Click the picture to zoom in</p>
+                   <div class="text">Sample 4</div>                 
                   </div>
                   </div>
+
                   <div class="card">
                     <div class="box">
                      <a href="sample5.jpg"><img src="sample5.jpg" alt=""></a>
                      <div class="text">Sample 5</div>
-                     <p>Click the picture to zoom in</p>
                     </div>
                     </div>
-          </div>
-       </div>
+                 </div>
+                 </div>
    </section>
       
    <!-- contacts-->
@@ -229,27 +229,27 @@
                </div> 
                 </div>
              </div>
-              <div class="column right">
-                 <div class="text">Message me</div>
-                 <form action="send_message.php" method="post">
+             <div class="column right">
+               <div class="text">Message me</div>
+               <form action="process_form.php" method="POST">
                    <div class="fields">
-                      <div class="field name">  
-                          <input type="text" placeholder="Name" required>
-                      </div> 
-                      <div class="field email">  
-                           <input type="email" placeholder="Email" required>
-                     </div>
-                      </div>
-                     <div class="field">  
-                          <input type="text" placeholder="Subject" required>
-                     </div>
-                     <div class="field textarea">  
-                          <textarea name="id" cols="50" rows="5" placeholder="Describe project.." required></textarea>
+                       <div class="field name">
+                           <input type="text" name="name" placeholder="Name" required>
                        </div>
-                      <div class="button">
-                          <button type="submit">Send message</button>
-                      </div>
-                 </form>
+                       <div class="field email">
+                           <input type="email" name="email" placeholder="Email" required>
+                       </div>
+                   </div>
+                   <div class="field">
+                       <input type="text" name="subject" placeholder="Subject" required>
+                   </div>
+                   <div class="field textarea">
+                       <textarea name="message" cols="50" rows="5" placeholder="Describe project.." required></textarea>
+                   </div>
+                   <div class="button">
+                       <button type="submit" name="submit">Send message</button>
+                   </div>
+               </form>
               </div>
           </div>
        </div>
